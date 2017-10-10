@@ -4,12 +4,12 @@ public class Cat extends Animal {
 
     @Override
     public void speak() {
-        System.out.println("Your " + name + " says Meow");
+        System.out.println(name + " says Meow");
     }
 
     @Override
     public void feed() {
-        System.out.println("Your " + name + " eats mice");
+        System.out.println(name + " eats mice");
     }
 
     @Override

@@ -4,12 +4,12 @@ public class Crocodile extends Animal {
 
     @Override
     public void speak() {
-        System.out.println("Your " + name + " doesn't speak");
+        System.out.println(name + " doesn't speak");
     }
 
     @Override
     public void feed() {
-        System.out.println("Your " + name + " wants to eat you!");
+        System.out.println(name + " wants to eat you!");
     }
 
     @Override

@@ -4,12 +4,12 @@ public class Fish extends Animal {
 
     @Override
     public void speak() {
-        System.out.println("Your " + name + " doesn't speak");
+        System.out.println(name + " doesn't speak");
     }
 
     @Override
     public void feed() {
-        System.out.println("Your " + name + " eats worms");
+        System.out.println(name + " eats worms");
     }
 
     @Override
