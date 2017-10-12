@@ -1,7 +1,7 @@
 package com.epam.hw1;
 
 public abstract class Animal {
-    String name;
+    private String name;
 
     public String getName() {
         return name;

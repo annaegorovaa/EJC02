@@ -4,16 +4,16 @@ public class Dog extends Animal {
 
     @Override
     public void speak() {
-        System.out.println(name + " says Woof");
+        System.out.println(super.getName() + " says Woof");
     }
 
     @Override
     public void feed() {
-        System.out.println(name + " eats meat");
+        System.out.println(super.getName() + " eats meat");
     }
 
     @Override
     public void pet() {
-        System.out.println(name + " likes it and wags its tail");
+        System.out.println(super.getName() + " likes it and wags its tail");
     }
 }

@@ -4,16 +4,16 @@ public class Cat extends Animal {
 
     @Override
     public void speak() {
-        System.out.println(name + " says Meow");
+        System.out.println(super.getName() + " says Meow");
     }
 
     @Override
     public void feed() {
-        System.out.println(name + " eats mice");
+        System.out.println(super.getName() + " eats mice");
     }
 
     @Override
     public void pet() {
-        System.out.println(name + " likes it and purrs");
+        System.out.println(super.getName() + " likes it and purrs");
     }
 }

@@ -6,21 +6,33 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Main {
+    private static BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
     public static void main(String[] args) throws IOException {
         ArrayList<Animal> homeZoo = makeZoo();
+
+        showAnimals(homeZoo);
+        giveNames(homeZoo);
+        communicateWithAnimals(homeZoo);
+    }
+
+    private static void showAnimals(ArrayList<Animal> homeZoo) {
         System.out.println("In your zoo you have:");
         for(Animal a: homeZoo) {
             System.out.println(" a " + a.getClass().getSimpleName().toLowerCase());
         }
+    }
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    private static void giveNames(ArrayList<Animal> homeZoo) throws IOException {
         System.out.println("Let's give them names!");
         for(Animal a: homeZoo) {
             System.out.println("What would be the name for your " + a.getClass().getSimpleName().toLowerCase() + "?");
             String name = reader.readLine();
             a.setName(name);
         }
+    }
 
+    private static void communicateWithAnimals(ArrayList<Animal> homeZoo) throws IOException {
         System.out.println("What do you want to do with your animals?\n" +
                 "1 - speak\n2 - feed\n3 - pet\n");
 
@@ -43,8 +55,6 @@ public class Main {
                     System.out.println("You can't do this with your " + a.getClass().getSimpleName().toLowerCase());
             }
         }
-
-
     }
 
     public static ArrayList makeZoo() {
