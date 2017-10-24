@@ -6,8 +6,8 @@ import java.io.InputStreamReader;
 
 public class Main {
     public static void main(String[] args) {
-       TrafficLight trafficLight = new TrafficLight();
-       trafficLight.minute = readTime();
+        TrafficLight trafficLight = new TrafficLight();
+        trafficLight.minute = readTime();
         System.out.println("The color of the traffic light is " + trafficLight.checkColor());
     }
 
