@@ -1,4 +1,4 @@
-package com.epam.hw3;
+package com.epam.hw3.behavior;
 
 public class FlyAvailable implements FlyBehavior {
 

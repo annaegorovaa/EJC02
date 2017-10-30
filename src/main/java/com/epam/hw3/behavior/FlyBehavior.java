@@ -1,4 +1,4 @@
-package com.epam.hw3;
+package com.epam.hw3.behavior;
 
 public interface FlyBehavior {
     void fly();

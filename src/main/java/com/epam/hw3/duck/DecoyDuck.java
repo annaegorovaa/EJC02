@@ -1,4 +1,7 @@
-package com.epam.hw3;
+package com.epam.hw3.duck;
+
+import com.epam.hw3.behavior.FlyUnavailable;
+import com.epam.hw3.behavior.Quack;
 
 public class DecoyDuck extends Duck {
 

@@ -1,4 +1,7 @@
-package com.epam.hw3;
+package com.epam.hw3.duck;
+
+import com.epam.hw3.behavior.FlyBehavior;
+import com.epam.hw3.behavior.QuackBehavior;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;
