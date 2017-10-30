@@ -1,4 +1,4 @@
-package com.epam.l8.TaskException2;
+package com.epam.l8.taskException2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
