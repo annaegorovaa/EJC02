@@ -7,17 +7,18 @@ public abstract class Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-    public abstract void present();
+    public abstract String present();
 
-    public void swim() {
+    public String swim() {
         System.out.println("Swims in a pool.");
+        return "swim";
     }
 
-    public void performFly() {
-        flyBehavior.fly();
+    public String performFly() {
+        return flyBehavior.fly();
     }
 
-    public void performQuack() {
-        quackBehavior.quack();
+    public String performQuack() {
+        return quackBehavior.quack();
     }
 }

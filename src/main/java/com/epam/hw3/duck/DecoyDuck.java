@@ -11,7 +11,8 @@ public class DecoyDuck extends Duck {
     }
 
     @Override
-    public void present() {
+    public String present() {
         System.out.println("This is a decoy for ducks.");
+        return "decoy";
     }
 }

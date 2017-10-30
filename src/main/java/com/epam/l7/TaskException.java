@@ -21,10 +21,10 @@ public class TaskException {
     }
 
     public String checkInput(String s) {
-            if(s.equals("Barsik")) {
-                System.out.println("Input OK");
-                return s;
-            }
-            throw new BarsikException("Your input should be \"Barsik\", but you typed: " + s);
+        if (s.equals("Barsik")) {
+            System.out.println("Input OK");
+            return s;
+        }
+        throw new BarsikException("Your input should be \"Barsik\", but you typed: " + s);
     }
 }
