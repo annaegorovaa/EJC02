@@ -8,6 +8,7 @@ import java.util.Objects;
 public class Main {
     public static void main(String[] args) {
         Main main = new Main();
+        System.out.println("Please enter cat's name:");
         main.checkCat(main.readInput());
     }
 
@@ -18,7 +19,7 @@ public class Main {
                 return name;
             }
         }
-        throw new IllegalArgumentException("This cat is not allowed to enter the house!");
+        throw new IllegalArgumentException(name + " is not allowed to enter the house!");
     }
 
     public String readInput() {
