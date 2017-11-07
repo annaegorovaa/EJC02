@@ -26,11 +26,11 @@ public class Main {
             horses.add(new Horse("Sunny", 3, 4));
 
             List<MenuItem> menuItems = new ArrayList<>();
-            ShowHorseData horseData = new ShowHorseData(horses);
+            ShowHorsesMenuItem horseData = new ShowHorsesMenuItem(horses);
             menuItems.add(horseData);
-            menuItems.add(new ShowBalance(balance));
-            menuItems.add(new TopUpBalance(balance, reader));
-            menuItems.add(new MakeBet(horses, balance, reader, horseData));
+            menuItems.add(new ShowBalanceMenuItem(balance));
+            menuItems.add(new TopUpBalanceMenuItem(balance, reader));
+            menuItems.add(new MakeBetMenuItem(horses, balance, reader, horseData));
 
             Menu menu = new Menu(menuItems, reader);
             printGreeting();

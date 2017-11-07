@@ -4,11 +4,11 @@ import com.epam.hw4.Horse;
 
 import java.util.List;
 
-public class ShowHorseData extends MenuItem {
+public class ShowHorsesMenuItem extends MenuItem {
 
     private List<Horse> horses;
 
-    public ShowHorseData(List<Horse> horses) {
+    public ShowHorsesMenuItem(List<Horse> horses) {
         super("show information about horses");
         this.horses = horses;
     }

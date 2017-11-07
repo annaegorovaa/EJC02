@@ -2,10 +2,10 @@ package com.epam.hw4.menu;
 
 import com.epam.hw4.Balance;
 
-public class ShowBalance extends MenuItem {
+public class ShowBalanceMenuItem extends MenuItem {
     private Balance balance;
 
-    public ShowBalance(Balance balance) {
+    public ShowBalanceMenuItem(Balance balance) {
         super("show balance");
         this.balance = balance;
     }

@@ -7,14 +7,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.List;
 
-public class MakeBet extends MenuItem {
+public class MakeBetMenuItem extends MenuItem {
     private List<Horse> horses;
     private Balance balance;
     private BufferedReader reader;
-    private ShowHorseData horseData;
+    private ShowHorsesMenuItem horseData;
     private boolean firstBet = true;
 
-    public MakeBet(List<Horse> horses, Balance balance, BufferedReader reader, ShowHorseData horseData) {
+    public MakeBetMenuItem(List<Horse> horses, Balance balance, BufferedReader reader, ShowHorsesMenuItem horseData) {
         super("make bet");
         this.horses = horses;
         this.balance = balance;

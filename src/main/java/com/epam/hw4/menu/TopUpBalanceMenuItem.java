@@ -5,11 +5,11 @@ import com.epam.hw4.Balance;
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class TopUpBalance extends MenuItem {
+public class TopUpBalanceMenuItem extends MenuItem {
     private Balance balance;
     private BufferedReader reader;
 
-    public TopUpBalance(Balance balance, BufferedReader reader) {
+    public TopUpBalanceMenuItem(Balance balance, BufferedReader reader) {
         super("top up balance");
         this.balance = balance;
         this.reader = reader;
